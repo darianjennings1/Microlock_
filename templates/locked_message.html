@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    {% include 'navbar.html' %}
+    <head>
+        <title>MicroLock</title>
+        <link rel="stylesheet" href="/statics/styles.css">
+        {{ fontawesome_html() }}
+    </head>
+        <body>
+            <div id="containerMicroLock">
+                <br><br><h1>MicroLock  <i class="fas fa-lock"></i></h1>
+                <br><p>A simple encryption tool</p>
+            </div>
+            <br><br>
+            <h3>Locked Message</h3></br>
+            <h3>Copy and paste the below and send to {{name}} at {{email}}</h3><br>
+            
+            <div id="containerOutput">
+                <pre>
+From: {{my_name}}
+$$$$$$$$$$ 
+Sender email: {{my_email}}
+$$$$$$$$$$ 
+{{my_public_key}}            
+$$$$$$$$$$          
+{{locked_message}}
+                </pre>
+            </div>
+            <br>
+            <button onclick="myFunction()">Copy Text</button>
+            <script>
+                function myFunction() {
+                    if (document.selection) {
+                        var range = document.body.createTextRange();
+                        range.moveToElementText(document.getElementById("containerOutput"));
+                        range.select().createTextRange();
+                        document.execCommand("copy");
+                    } else if (window.getSelection) {
+                        var range = document.createRange();
+                        range.selectNode(document.getElementById("containerOutput"));
+                        window.getSelection().addRange(range);
+                        document.execCommand("copy");
+                    }
+                }
+            </script>
+        </body>
+</html>

@@ -1,0 +1,74 @@
+xxxxhtml * {
+  font-family: Nunito, sans-serif;
+}
+h2, h3 {
+  text-align: center;
+}
+p {
+  display: block; 
+  margin: auto;
+  color: blue;
+  width: 70%;
+  word-wrap:break-word;
+}
+#containerMicroLock h1, #containerMicroLock p {
+  display: inline;
+  vertical-align: top;
+  font-size: 40px;
+  color: purple;
+}
+#containerMicroLock p {
+  font-size: 16px;
+}
+button[type=instructions] {
+  border-radius: 4px;
+  color: white;
+  background-color: blue;
+}
+
+body {
+  background-color: rgb(201, 201, 201);
+  text-align: center;
+  }
+  h1 {
+    text-decoration: underline;
+  }
+  button[type=uploadFile] {
+    background-color: black;
+    color: white;
+    line-height: 28px;
+    border-radius: 4px;
+  }
+  button[type=generateKey], button[type=uploadKey] {
+    border-radius: 4px;
+  }
+  input[type=submit] {
+    background-color: blue;
+    color: white;
+    line-height: 28px;
+    width: 12%;
+    border-radius: 4px;
+  }
+  input:hover[type=submit] {
+    background-color: black;
+    color: white;
+  }
+  input[type=text] {
+    display: inline;
+    vertical-align: top;
+    line-height: 28px;
+    width: 30%;
+    border-color: black;
+    text-align: center;
+  }
+  input[type=radio]{
+    color: blue;
+  }
+  label {
+    display: block;
+  }
+  textarea {
+    border-radius: 6px;
+    border-width: 2px;
+    border-color: black;
+  }

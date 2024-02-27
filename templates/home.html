@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    {% include 'navbar.html' %}
+    <head>        
+        <title>MicroLock</title>
+        <link rel="stylesheet" href="/statics/styles.css">
+        {{ fontawesome_html() }}
+    </head>
+    <body>
+        <div id="containerMicroLock">
+            <br><br><h1>MicroLock  <i class="fas fa-lock"></i></h1>
+            <br><p>A simple encryption tool</p>
+        </div>
+        <br><br>
+        <div id="containerMicroLockInstructions">
+            <br><br>
+            <h4><u>About:</u></h4><br>
+                <p>MicroLock is a tool designed to send secure messages via email. It uses the latest security technology with the most secure options by default to keep your sensitive information safe when transmitting via email.<br><br>
+                </p>
+                
+                <p>
+                    To communicate securely with someone import their secure contact in the <b>Contacts</b> page. Their username is firstname_lastname - which is also the name of their secure contact file. You can also export your own secure contact to share with others on this page.
+                    </p><br>
+            
+                    <p>To send a secret message that only you and the person you are sending the message to will be able to read, go to the <b>Lock</b> page , enter their username, type your secret message, and hit Submit. Copy and paste the resulting secure message in to your email client and send to their email as you normally would.</p><br>
+            
+                    <p>To read a secret message go to the <b>Unlock</b> page, paste the secret message, and hit submit.</p>
+        </div>
+
+       
+    </body>
+</html>

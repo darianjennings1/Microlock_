@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MicroLock</title>
+        <link rel="stylesheet" href="/statics/styles.css">
+        {{ fontawesome_html() }}
+    </head>
+        <body>
+            <div id="containerMicroLock">
+                <br><br><h1>MicroLock  <i class="fas fa-lock"></i></h1>
+                <br><p>A simple encryption tool</p>
+            </div>
+            <form action="/" method="post">
+                <br><br><br><br><br>
+                <label for="textInputBox" style="color:white">Username:</label>
+                <input type="text" id="textInputBox" name="user" placeholder="Enter secure contact username..." required>
+                <br></br><br>
+
+                <label for="textInputBox" style="color:white">Password:</label>
+                <input type="password" id="textInputBox" name="pass" placeholder="Enter password..." required>            
+                
+                <br><br><br><br>
+                <input type="submit" id="login" name="login" value="Login">
+            </form>
+            <br>
+            <form action="/createAccount">
+                <input type="submit" id="create" name="createAccount" value="Create Account">
+                <br><br><br>
+            </form>
+        </body>
+</html>

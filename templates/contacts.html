@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    {% include 'navbar.html' %}
+    <head>
+        <title>MicroLock</title>
+        <link rel="stylesheet" href="/statics/styles.css">
+        {{ fontawesome_html() }}
+    </head>
+        <body>
+            <div id="containerMicroLock">
+                <br><br><h1>MicroLock  <i class="fas fa-lock"></i></h1>
+                <br><p>A simple encryption tool</p>
+            </div>
+            <br><br><br><br>
+            
+            <div id ="containerContacts">
+                <h6><a style="color: white" href="{{url_for('export_contact')}}">1. Export Secure Contact</a></h6>
+                <br><br><br>
+                <h6><a style="color: white">2. Import Secure Contact:</a></h6><br>
+                <form action = "/contacts" method = "post" enctype="multipart/form-data">  
+                    <input type="file" name="file" />  
+                    <input type = "submit" id="submit" value="Upload">  
+                </form> 
+                <br><br><br>
+                <h6><a style="color: white" href="{{url_for('import_manual_contact')}}">3. Enter Secure Contact Information Manually</a></h6>
+            </div>
+        </body>
+</html>

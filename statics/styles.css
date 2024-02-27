@@ -1,0 +1,170 @@
+html * {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+#containerMicroLock h1, #containerMicroLock p {
+  font-family: 'Comic Sans MS', cursive;
+  display: inline;
+  vertical-align: top;
+  font-size: 40px;
+  color: #A7F2E4;
+}
+
+#containerMicroLock p {
+  font-size: 16px;
+}
+
+#navCustom a{
+  color: white;
+}
+
+#navCustom a:hover{
+  color: lightblue;
+}
+
+#containerMicroLockInstructions h4, #containerMicroLockInstructions h5, #containerMicroLockInstructions p {
+  display: block;
+  text-align: left;
+  margin: auto;
+  color: #A7F2E4;
+  width: 90%;
+}
+
+#containerContacts, #containerContacts p {
+  display: block;
+  text-align: left;
+  margin: auto;
+  color: black;
+  width: 90%;
+}
+
+#containerOutput {
+  /*display: block;
+  text-align: left;
+  margin: auto;
+  color: black;
+  background-color: white;
+  max-width:1000px;*/
+
+  /* new css makes output smaller and scrollable */
+  margin:auto;
+  padding:5px;
+  background-color: white;
+  width: 500px;
+  height: 150px;
+  overflow: auto;
+  text-align:left;
+}
+
+pre {font-family: Consolas,monospace}
+
+button {
+  border-radius: 4px;
+  font-size: 74%;
+  height: 40px;
+  width: 70px;
+}
+button:hover {
+  border-color: blue;
+}
+
+body {
+  background-color: #194759;
+  text-align: center;
+  }
+  h1 {
+    text-decoration: underline;
+  }
+  h3 {
+    color: rgb(158, 158, 158);
+  }
+  button[type=uploadFile] {
+    background-color: black;
+    color: rgb(150, 150, 150);
+    line-height: 28px;
+    border-radius: 4px;
+  }
+  button[type=generateKey], button[type=uploadKey] {
+    border-radius: 4px;
+  }
+  input[type=submit] {
+    text-align: center;
+    background-color: black;
+    color: white;
+    line-height: 18px;
+    width: 15%;
+    border-radius: 4px;
+    border-width: 4px;
+    border-color: #0D0D0D;
+  }
+  input[type=upload] {
+    text-align: center;
+    background-color: black;
+    color: white;
+    line-height: 28px;
+    width: 12%;
+    border-radius: 4px;
+    border-width: 4px;
+    border-color: #0D0D0D;
+  }
+  input[type=file] {
+    display: block;
+    text-align: left;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    width: 200px;
+    line-height: 14px;
+    border-radius: 4px;
+  }
+  input[id=create] {
+    background-color: darkred;
+  }
+  input:hover[id=login],  input:hover[id=create], input:hover[id=submit] {
+    font-size: 105%;
+    border-color: white;
+  }
+  input[type=password] {
+    display: inline;
+    vertical-align: top;
+    line-height: 28px;
+    width: 30%;
+    border-color: black;
+    text-align: center;
+  }
+  input[type=text] {
+    display: inline;
+    vertical-align: top;
+    line-height: 28px;
+    width: 30%;
+    border-color: black;
+    text-align: center;
+    border-radius: 4px;
+    border-width: 4px;
+  }
+  input[type=upload] {
+    display: inline;
+    vertical-align: top;
+    line-height: 22px;
+    border-color: black;
+    text-align: center;
+    border-radius: 4px;
+    border-width: 4px;
+    width: 10%;
+  }
+  textarea {
+    display: inline;
+    vertical-align: top;
+    line-height: 28px;
+    border-color: black;
+    text-align: center;
+    border-radius: 20px;
+    border-width: 20px;
+  }
+  label {
+    display: block;
+  }
+  textarea {
+    border-radius: 6px;
+    border-width: 2px;
+    border-color: black;
+  }

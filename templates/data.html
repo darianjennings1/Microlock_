@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    {% include 'navbar.html' %}
+    <head>        
+        <title>MicroLock</title>
+        <link rel="stylesheet" href="/statics/styles.css">
+        {{ fontawesome_html() }}
+    </head>
+    <body>
+        <div id="containerMicroLock">
+            <br><br><h1>MicroLock  <i class="fas fa-lock"></i></h1>
+            <br><p>A simple encryption tool</p>
+        </div>
+        <br><br><br>
+        <div id="containerOutput">
+            {% block outputData %}
+                {% for key,value in return_data.items() %}
+                <h4>{{key}}</h4>
+                <p> {{value}}</p>
+                <br><br>
+                {% endfor %}  
+            {% endblock %} 
+        </div>
+    </body>
+</html>

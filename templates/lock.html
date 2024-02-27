@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    {% include 'navbar.html' %}
+    <head>
+        <title>MicroLock</title>
+        <link rel="stylesheet" href="/statics/styles.css">
+        {{ fontawesome_html() }}
+    </head>
+        <body>
+            <div id="containerMicroLock">
+                <br><br><h1>MicroLock  <i class="fas fa-lock"></i></h1>
+                <br><p>A simple encryption tool</p>
+            </div>
+            <br><br>
+            
+            <form action="/lock" method="post">        
+                <input type="text" id="textInputBox" name="ruser" placeholder="Enter recipient secure contact username..." required>
+                <br><br>
+
+                <textarea id="textInputBox" name="ptext_mess" placeholder="Enter secure message to lock..." 
+                        rows="8" cols="50" required></textarea>
+                <br><br>
+                
+                <input type="submit" id="submit" name="main" value="LOCK">
+            </form>
+        </body>
+</html>
